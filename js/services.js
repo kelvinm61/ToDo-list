@@ -15,7 +15,7 @@ angular.module('starter.services', [])
   //this is how the todo is added to the file along ith the current date and time
   function addToDo(title) 
     {
-    data.details.push({title: title, added: new Date()});
+    data.detail.push({title: title, added: new Date()});
     }
   // this is where the to do will be returned(added) to the list
   return{
