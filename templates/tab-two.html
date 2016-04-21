@@ -1,16 +1,17 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Add to list">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">What would you like to add to you list?</span>
+        <input type="text" ng-model="data.newToDo" placeholder="Enter here">
+      </label>
+    </div>
+
+    <button class="button  button-full button-large button-balanced" ng-click="addtodo()">
+  Add to list
+</button>
+    
   </ion-content>
 </ion-view>
+

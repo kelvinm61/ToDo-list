@@ -1,9 +1,12 @@
-<ion-view view-title="Account">
+<ion-view view-title="To Do">
   <ion-content>
+    
+ 
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+      <ion-item ng-repeat="todo in data.detail">
+        <h3>{{ todo.title }}</h3>
+        <h6>{{ todo.added | date: 'yyyy-MM-dd HH:mm' }}</h6>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
