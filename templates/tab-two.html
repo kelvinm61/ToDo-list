@@ -1,13 +1,14 @@
+<!--This page is where we ask the user to input what they want to add to the to do list.-->
 <ion-view view-title="Add to list">
   <ion-content>
-
+<!--This is where i decide what type of label and how to ask the user what they want to enter and then show them where to enter it -->
     <div class="list">
       <label class="item item-input item-stacked-label">
         <span class="input-label">What would you like to add to you list?</span>
         <input type="text" ng-model="data.newToDo" placeholder="Enter here">
       </label>
     </div>
-
+<!-- This is the button i have chosen for the user to click to add the to do to the list-->
     <button class="button  button-full button-large button-balanced" ng-click="addtodo()">
   Add to list
 </button>

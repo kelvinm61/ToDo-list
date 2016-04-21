@@ -17,7 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-
+//this is where we give the tabs url 
     .state('tab', 
   {
     url: '/tab',
@@ -25,7 +25,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/tabs.html'
   })
 
-
+//this is tab ones url and controller
   .state('tab.one', 
    {
     url: '/one',
@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
       }
     })
-
+//this is tab twos url and controller
   .state('tab.two', 
      {
       url: '/two',
@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
       }
     })
-  
+  //this is threes url and controller
   .state('tab.three', 
     {
     url: '/three',
