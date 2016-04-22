@@ -11,13 +11,10 @@ angular.module('starter.controllers', [])
       };
 
   //this is the function and factory thats adds what was wrote on tab2 and saves it in tab 3 
-  function addToDo()  {
-    ToDo.addToDo(data.newToDo);
-    data.newToDo = " ";
-    }
+ 
   
   $scope.data = data;
-  $scope.addToDo = addToDo;
+  $scope.addToDo = ToDo.addToDo
   })
 //contoller for third tab (forgetting something?)
 .controller('threeCtrl', function($scope){});

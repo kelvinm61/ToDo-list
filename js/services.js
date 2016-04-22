@@ -16,6 +16,7 @@ angular.module('starter.services', [])
   function addToDo(title) 
     {
     data.detail.push({title: title, added: new Date()});
+        console.log(data.detail)
     }
   // this is where the to do will be returned(added) to the list
   return{
