@@ -24,6 +24,6 @@ angular.module('starter.services', [])
     data: data
     , addToDo: addToDo
   };
-    todo.addToDo.splice(todo.indexOf(addToDo), 1)
+   task.deletetask.splice(task.indexOf(deletetask), 1)
      
 });
