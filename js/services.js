@@ -8,6 +8,7 @@ angular.module('starter.services', [])
       detail: 
           [
       {title: "book hotel", added: new Date()}
+             
       , {title: "pick up dry cleaning ", added: new Date()}
       , {title: "record tv", added: new Date()}
           ]
@@ -23,4 +24,6 @@ angular.module('starter.services', [])
     data: data
     , addToDo: addToDo
   };
+    
+     
 });
